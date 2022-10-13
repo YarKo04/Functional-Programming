@@ -1,10 +1,9 @@
 module Main where
 
-import Prelude
+import Prelude hiding(flip)
+import Lab1 as Lab1
 
 import Effect (Effect)
-import Effect.Console (log)
 
 main :: Effect Unit
-main = do
-  log "🍝"
+main = Lab1.test
